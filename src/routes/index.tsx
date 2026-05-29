@@ -304,7 +304,7 @@ function Lineup() {
         </div>
 
         {/* Headliners */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="grid md:grid-cols-2 gap-6 mb-8" >
           {lineupData.filter(a => a.headliner).map((a) => (
             <div key={a.name} className="relative group rounded-2xl overflow-hidden bg-gradient-to-br from-brand-ox-deep via-brand-ox to-brand-ox-deep p-8 border border-brand-orange/25 hover:border-brand-orange/70 transition shadow-deep hover:shadow-glow">
               <div className="absolute top-0 right-0 w-40 h-40 bg-brand-orange/10 blur-2xl rounded-full" />

@@ -18,7 +18,7 @@ export function SiteHeader() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <img src={logo} alt="Marcha Para Jesus Campinas" className="h-37 w-auto" />
-       
+
         </Link>
         <nav className="hidden lg:flex items-center gap-1">
           {nav.map((n) => (
@@ -26,7 +26,7 @@ export function SiteHeader() {
               key={n.to}
               to={n.to}
               activeOptions={{ exact: n.to === "/" }}
-              className="px-4 py-2 text-sm font-medium tracking-wide uppercase hover:text-brand-orange transition-colors"
+              className="px-4 py-2 text-sm font-medium tracking-wide uppercase text-brand-cream/90 hover:text-brand-orange transition-colors"
               activeProps={{ className: "px-4 py-2 text-sm font-medium tracking-wide uppercase text-brand-orange" }}
             >
               {n.label}

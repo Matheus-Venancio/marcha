@@ -1,4 +1,10 @@
 {
   "buildCommand": "vite build",
-  "framework": null
+  "framework": null,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
 }
